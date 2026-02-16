@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background: #0a0018;
+    font-family: Arial, sans-serif;
+    color: #00ff99;
+    text-align: center;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.content {
+    margin-top: 120px;
+}
+
+h1 {
+    font-size: 50px;
+    text-shadow: 0 0 20px #00ff99;
+}
+
+.tagline {
+    color: #aaffdd;
+    margin-bottom: 40px;
+}
+
+.upload-box {
+    width: 420px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 15px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 40px rgba(168, 85, 247, 0.6);
+}
+
+button {
+    padding: 12px 25px;
+    background: #00ff99;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.loader {
+    border: 6px solid #1a1a1a;
+    border-top: 6px solid #00ff99;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    100% { transform: rotate(360deg); }
+}
+
+.result-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.preview {
+    width: 150px;
+    border-radius: 10px;
+}
+
+.percentage {
+    font-size: 30px;
+    color: #00ff99;
+}
